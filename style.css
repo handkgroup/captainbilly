@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.fv {
+    background: url('./assets/img/fv/bg.png') no-repeat center/cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    > img {
+        max-width: 100%;
+        position: absolute;
+    }
+}
+
+.fv-menu {
+    top: -2%;
+    right: 3%;
+}
+
+.fv-subtitle {
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fv-birds {
+    top: 18%;
+    left: 15%;
+}
+
+.fv-pio1 {
+    top: 45%;
+    right: 28%;
+}
+
+.fv-pio2 {
+    top: 70%;
+    right: 17%;
+}
+
+.fv-pio3 {
+    top: 40%;
+    right: 20%;
+}
+
+.fv-animals {
+    bottom: 29%;
+    left: 49%;
+    transform: translateX(-49%);
+    z-index: 10;
+}
+
+.fv-boat {
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fv-island {
+    bottom: 12%;
+    right: -8%;
+}
+
+.fv-sea {
+    bottom: -5%;
+    width: 100%;
+}
+
+.fv-circle1 {
+    top: 15%;
+    left: -3%;
+}
+
+.fv-circle2 {
+    top: 35%;
+    right: -3%;
+}
+
+.fv-scroll {
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fv-cloud1 {
+    top: 5%;
+    left: -2%;
+}
+
+.fv-cloud2 {
+    top: 15%;
+    right: -2%;
+}
+
+.fv-cloud3 {
+    top: 5%;
+    right: 10%;
+}
+
+.fv-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
