@@ -1,0 +1,452 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* if you are have the font-familiy of the texts
+ can you please set in here  */
+ 
+html {
+  font-size: 62.5%;
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+:root {
+  /* --font-family: 'Poppins', sans-serif; */
+  line-break: anywhere;
+}
+
+h1 {
+  font-size: 4.6rem;
+}
+
+h2 {
+  font-size: 4.6rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+ui {
+  font-size: 1.6rem;
+}
+
+li {
+  font-size: 1.6rem;
+}
+
+@media(max-width: 1024px) {
+
+  h2 {
+    font-size: 4.6rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+
+@media(max-width: 768px) {
+
+  h2 {
+    font-size: 2.6rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  a {
+    font-size: 1.3rem;
+  }
+}
+
+@media(max-width: 520px) {
+
+  h1 {
+    font-size: 4.3rem;
+  }
+}
+
+
+
+
+.btob-body {
+  position: relative;
+  background-image: url('./images/background-btob.png');
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: top left;
+  margin: 0;
+  height: auto;
+  width: 100%;
+}
+
+
+.container {
+  width: 100%;
+  padding: 0 60px;
+  max-width: 1100px;
+}
+
+@media (max-width:1024px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width:768px) {
+
+  .container {
+    padding: 0 20px;
+  }
+}
+
+
+.top-section-btob {
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+  height: 100vh;
+  margin: 0 auto;
+  display: block;
+}
+
+.top-section-btob .center {
+  position: absolute;
+  width: 100%;
+}
+
+.top-section-btob .left {
+  position: absolute;
+  width: 100%;
+}
+
+.top-section-btob .right {
+  position: absolute;
+  width: 100%;
+}
+
+.posstion-realitive {
+  position: relative;
+}
+
+.posstion-realitive img {
+  position: absolute;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  width: 100%;
+  height: auto;
+  scale: 0.3;
+}
+
+.posstion-realitive img:hover {
+  transform: scale(0.6) rotate(5deg);
+  opacity: 0.9;
+}
+.center-img-1 {
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.center-img-2 {
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.center-img-3 {
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+.center-img-4 {
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.center-img-5 {
+  top: 0;
+  left: 0;
+  z-index: 6;
+}
+
+.center-img-bird {
+  top: 0;
+  left: 0;
+  z-index: 7;
+  width: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.left .posstion-realitive img {
+  top: 0;
+  left: 0;
+  transform: rotate(-5deg);
+  width: 60%;
+}
+
+.left-img-1 {
+  top: 0;
+  left: 0;
+}
+
+.left-img-2 {
+  top: 0;
+  left: 0;
+}
+
+.left-img-3 {
+  top: 0;
+  left: 0;
+}
+
+.right .posstion-realitive img {
+  top: 0;
+  right: 0;
+  transform: rotate(5deg);
+  width: 60%;
+}
+
+.right-img-1 {
+  top: 0;
+  right: 0;
+}
+
+.right-img-2 {
+  top: 0;
+  right: 0;
+}
+
+.right-img-3 {
+  top: 0;
+  right: 0;
+}
+
+
+.main-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+.top-side-btob {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-clound-top {
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  height: auto;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.img-clound-top img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.scrol-img {
+  width: 7%;
+  height: auto;
+  max-width: 70px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+
+.top-whole-img {
+  width: 100%;
+  height: auto;
+}
+
+.top-whole-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.s1-title-box {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 30px;
+}
+
+.title-orenge {
+  max-width: 550px;
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+}
+
+.title-orenge img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.title-orenge .dot {
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+.title-subtitle {
+  color: #008763;
+  font-size: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.title-subtitle img {
+  content: '';
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title-description {
+  max-width: 640px;
+  text-align: center;
+  color: #008763;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.cards-seaction {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.card-main-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card-main-box .card-img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.card-main-box .card-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.s1-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.s1-card-text .title-subtitle {
+  font-size: 18px;
+  color: #5D3E23 !important;
+  text-align: center;
+  line-height: 160%;
+}
+
+.knowledge-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 60px;
+}
+
+.knowledge-section h2, li {
+  max-width: 640px;
+  text-align: center;
+  color: #5D3E23;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.knowledge-section li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.icon-bn-cards {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.s1-card-text .title-subtitle img {
+  bottom: -30px;
+}
+
+.commentary-box {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center; 
+  border-radius: 20px;
+  margin-top: 50px;
+  position: relative;
+}
+
+
+.commentary-box p {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 160%;
+  color: white;
+  box-shadow: #5D3E23;
+}
+
+
+.commentary-box img{
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 37px;
+  height: 26px;
+}
+
