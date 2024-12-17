@@ -1,156 +1,282 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .fv {
-    background: url('./assets/img/fv/bg.png') no-repeat center/cover;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+  background: url("./assets/img/fv/bg.png") no-repeat center/cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
 .fv > img {
-    max-width: 100%;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s ease, transform 1s ease;
+  max-width: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .fv .fv-cta {
-    opacity: 0;
+  opacity: 0;
 }
 
 .fv .fade-in {
-    opacity: 1;
+  opacity: 1;
 }
 
 .fv .fade-from-bottom {
-    opacity: 1;
-    transform: translateY(-50px);
+  opacity: 1;
+  transform: translateY(-50px);
 }
 
 .fv .fade-from-top {
-    opacity: 1;
-    transform: translateY(50px);
+  opacity: 1;
+  transform: translateY(50px);
 }
 
 .fv .fade-from-right {
-    opacity: 1;
-    transform: translateX(-50px);
+  opacity: 1;
+  transform: translateX(-50px);
 }
 
 .fv .fade-from-left {
-    opacity: 1;
-    transform: translateX(50px);
+  opacity: 1;
+  transform: translateX(50px);
 }
 
 .fv-logo {
-    opacity: 1;
-    top: -4%;
-    left: 2%;
+  opacity: 1;
+  top: -4%;
+  left: 2%;
 }
 
 .fv-menu {
-    top: -8%;
-    right: 3%;
+  top: -8%;
+  right: 3%;
 }
 
 .fv-subtitle {
-    top: 28%;
-    left: 50%;
-    transform: translateX(-50%);
+  top: 28%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .fv-birds {
-    top: 18%;
-    left: 12%;
+  top: 18%;
+  left: 12%;
 }
 
 .fv-pio1 {
-    top: 40%;
-    right: 25%;
+  top: 40%;
+  right: 25%;
+  transform: rotate(0);
+  animation: fuwafuwa2 3s infinite linear alternate;
 }
 
 .fv-pio2 {
-    top: 65%;
-    right: 16%;
+  top: 65%;
+  right: 16%;
+  animation: fuwafuwa 3s infinite linear alternate;
 }
 
 .fv-pio3 {
-    top: 35%;
-    right: 20%;
+  top: 35%;
+  right: 20%;
+  transform: rotate(0);
+  animation: fuwafuwa2 3s infinite linear alternate;
 }
 
 .fv-animals {
-    bottom: 33%;
-    left: 49%;
-    transform: translateX(-49%);
-    z-index: 10;
-    opacity: 1; 
+  bottom: 33%;
+  left: 49%;
+  transform: translateX(-49%);
+  z-index: 10;
+  opacity: 1;
 }
 
 .fv-boat {
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .fv-island {
-    bottom: 17%;
-    right: -10%;
+  bottom: 17%;
+  right: -10%;
 }
 
 .fv-sea {
-    bottom: -10%;
-    width: 100%;
-    opacity: 1;
-    transform: translateY(100%); 
-    transition: opacity 1s ease, transform 1s ease; 
+  bottom: -10%;
+  width: 100%;
+  opacity: 1;
+  transform: translateY(100%);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .fv-circle1 {
-    top: 22%;
-    left: -7%;
+  top: 22%;
+  left: -7%;
 }
 
 .fv-circle2 {
-    top: 30%;
-    right: -4%;
+  top: 30%;
+  right: -4%;
 }
 
 .fv-scroll {
-    bottom: 2%;
-    left: 50%;
-    transform: translateX(-50%);
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .fv-cloud1 {
-    top: 10%;
-    left: -8%;
+  top: 10%;
+  left: -8%;
 }
 
 .fv-cloud2 {
-    top: 15%;
-    right: -5%;
+  top: 15%;
+  right: -5%;
 }
 
 .fv-cloud3 {
-    top: 5%;
-    right: 5%;
+  top: 5%;
+  right: 5%;
 }
 
 .fv-cta {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    position: absolute;
-    bottom: 20px;
-    left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+}
+
+@media (max-width: 500px) {
+  .fv {
+    height: 90vh;
+  }
+  .fv-logo {
+    width: 25%;
+    top: -6%;
+  }
+  .fv-menu {
+    top: -9%;
+    right: 6%;
+    width: 15%;
+  }
+  .fv-subtitle {
+    top: 55%;
+    width: 70%;
+  }
+  .fv-birds {
+    top: 27%;
+    left: -27%;
+  }
+  .fv-pio1 {
+    top: 55%;
+    right: 85%;
+  }
+  .fv-pio2 {
+    top: 35%;
+    right: 45%;
+  }
+  .fv-pio3 {
+    top: 61%;
+    right: 12%;
+  }
+  .fv-animals {
+    bottom: 17%;
+    left: 45%;
+  }
+  .fv-boat {
+    bottom: 2%;
+  }
+  .fv-island {
+    display: none;
+  }
+  .fv-sea {
+    width: 160%;
+    max-width: unset !important;
+    bottom: -18%;
+  }
+  .fv-circle1 {
+    width: 40%;
+    top: 15%;
+    left: -16%;
+  }
+  .fv-circle2 {
+    width: 40%;
+    top: 13%;
+    right: -10%;
+    z-index: 10;
+  }
+  .fv-scroll {
+    width: 15%;
+    bottom: -12%;
+    left: 45%;
+  }
+  .fv-cloud1 {
+    top: 8%;
+    left: -25%;
+    width: 50%;
+  }
+  .fv-cloud2 {
+    top: 7%;
+    right: -12%;
+    width: 50%;
+  }
+  .fv-cloud3 {
+    display: none;
+  }
+  .fv-cta {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+    .fv-animals {
+        bottom: 15.5%;
+    }
+}
+
+@media (max-width: 320px) {
+    .fv-animals {
+        bottom: 11.5%;
+    }
+    .fv-boat {
+        bottom: 0;
+    }
+}
+
+@keyframes fuwafuwa {
+  0% {
+    transform: translate(0, 0) rotate(-10deg);
+  }
+  50% {
+    transform: translate(0, -15px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(10deg);
+  }
+}
+
+@keyframes fuwafuwa2 {
+  0% {
+    transform: translate(0, 0) rotate(10deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(-10deg);
+  }
+  100% {
+    transform: translate(0, 15px) rotate(0deg);
+  }
 }
