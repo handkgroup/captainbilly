@@ -91,8 +91,6 @@ li {
 
 
 
-
-
 .container {
   width: 100%;
   padding: 0 60px;
@@ -222,12 +220,14 @@ li {
     opacity: 0.8;
     transform: translateX(-100%) scale(0.9);
   }
+
   60% {
-    transform: translateX(3%) scale(1.01); 
+    transform: translateX(3%) scale(1.01);
   }
+
   100% {
     opacity: 1;
-    transform: translateX(0) scale(1); 
+    transform: translateX(0) scale(1);
   }
 }
 
@@ -236,9 +236,11 @@ li {
     opacity: 0.8;
     transform: translateX(100%) scale(0.9);
   }
+
   60% {
     transform: translateX(-3%) scale(1.01);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0) scale(1);
@@ -249,24 +251,24 @@ li {
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.6s ease;
-  animation-duration: 1.5s; 
+  animation-duration: 1.5s;
   animation-timing-function: ease-out;
-  animation-fill-mode: forwards; 
+  animation-fill-mode: forwards;
 }
 
 .animal-left-j.visible {
   animation-name: animalSlideInLeft;
-  animation-delay: 0.3s; 
+  animation-delay: 0.3s;
 }
 
 .animal-right-j.visible {
   animation-name: animalSlideInRight;
-  animation-delay: 1s; 
+  animation-delay: 1s;
 }
 
 .fade-in {
   opacity: 0;
-  transform: translateY(20px); 
+  transform: translateY(20px);
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
@@ -697,7 +699,6 @@ li {
 .form-container {
   width: 100%;
   gap: 30px;
-
 }
 
 .contact-form {
@@ -730,6 +731,18 @@ li {
   line-height: 200%;
   font-weight: 700;
   max-height: 50px;
+}
+
+.form-group span {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+  color: #5D3E23;
+  text-align: left;
+  line-height: 200%;
+  font-weight: 700;
 }
 
 .form-group label img {
@@ -994,7 +1007,8 @@ footer {
     height: auto;
   }
 
-  .form-group label {
+  .form-group label,
+  .form-group span {
     font-size: 14px;
   }
 
@@ -1022,3 +1036,62 @@ footer {
 
 
 }
+
+
+
+
+
+
+.submit-btn {
+  cursor: pointer;
+}
+
+
+.review-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  flex-direction: column;
+}
+
+.thank-you-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 90px;
+}
+
+.thanks-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+.button-container  {
+  margin-top: 30px;
+  display: flex;
+  gap: 60px;
+}
+
+.button-container button {
+ width: 100%;
+ max-width: 163px;
+}
+.button-container button img{
+  width: 100%;
+  height: auto
+}
+
+.button-container a {
+  width: 100%;
+  max-width: 163px;
+ }
+ .button-container a img{
+   width: 100%;
+   height: auto
+ }
+
