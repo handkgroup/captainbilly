@@ -7,7 +7,7 @@
 
 /* if you are have the font-familiy of the texts
  can you please set in here  */
- 
+
 html {
   font-size: 62.5%;
   /* font-family: 'Poppins', sans-serif; */
@@ -147,6 +147,7 @@ li {
   transform: scale(0.6) rotate(5deg);
   opacity: 0.9;
 }
+
 .center-img-1 {
   top: 0;
   left: 0;
@@ -315,7 +316,7 @@ li {
 
 .title-subtitle {
   color: #008763;
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 20px;
   position: relative;
   display: inline-block;
@@ -404,8 +405,8 @@ li {
 }
 
 .icon-bn-cards {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -423,7 +424,7 @@ li {
   align-items: center;
   justify-content: center;
   background-size: cover;
-  background-position: center; 
+  background-position: center;
   border-radius: 20px;
   margin-top: 50px;
   position: relative;
@@ -441,12 +442,206 @@ li {
 }
 
 
-.commentary-box img{
+.commentary-box img {
   position: absolute;
-  top: -25px;
+  top: -23px;
   left: 50%;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
   width: 37px;
   height: 26px;
 }
 
+.mg-top-100 {
+  margin-top: 100px;
+}
+
+.card-img-title {
+  color: #EF8638;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img-title span {
+  color: #EF8638;
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 3px;
+}
+
+.gap-60 {
+  gap: 60px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mt-160 {
+  margin-top: 160px;
+
+}
+.s2-text-span {
+  padding: 0 20px;
+}
+
+.s2-text-content {
+  font-size: 16px;
+  color: #5D3E23;
+  text-align: left;
+  line-height: 200%;
+}
+
+.s2-card-main-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.s2-card-main-box .card-img, .s2-card-main-box .card-img img {
+  width: 100%;
+}
+
+.icon-bn-cards2 {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title-description-2 {
+  text-align: center;
+  color: #5D3E23;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 200%;
+
+}
+
+.s3-title-box {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.s3-images-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.s3-images-content .top {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.s3-images-content .top img {
+  width: 60%;
+  height: auto;
+  max-width: 592px;
+}
+
+.s3-images-content .top .icon-img {
+  width: fit-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.s3-images-content .bottom {
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.s3-images-content .bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.commentary-box .commetn-img2 {
+  position: absolute;
+  top: unset;
+  bottom: -23px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 37px;
+  height: 26px;
+  transform: rotate(180deg);
+}
+
+.s2-comment-contetn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 80px;
+}
+
+.s2-comment-contetn .commentary-box {
+  margin-top: 0;
+}
+
+.s2-comment-contetn h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FF6D00;
+}
+
+.info-main-s2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  margin-top: 80px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.info-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.info-item p {
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 200%;
+  color: #5D3E23 ;
+}
+
+.ta-center {
+  text-align: center !important;
+}
